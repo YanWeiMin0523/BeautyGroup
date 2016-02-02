@@ -1,0 +1,6 @@
+platform:ios,'7.0'
+pod 'MJExtension'
+pod 'SVProgressHUD'
+pod 'UMengAnalytics'
+pod ^?'AMap3DMap'
+pod ^?'AMapSearch'
