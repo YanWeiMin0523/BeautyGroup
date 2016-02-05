@@ -23,6 +23,7 @@
 #	define DLog(...)
 #endif
 
+#import <UIKit/UIKit.h>
 #import "PWDefine.h"
 #import "HWTools.h"
 #import "AppDelegate.h"

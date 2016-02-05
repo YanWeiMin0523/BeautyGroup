@@ -11,7 +11,6 @@
 #import "WXApi.h"
 #import "WXApiObject.h"
 #import <MessageUI/MessageUI.h>
-#import "BeautyGroup.pch"
 
 @interface ShareView ()<WXApiDelegate, WBHttpRequestDelegate>
 @property(nonatomic, strong) UIView *shareView;

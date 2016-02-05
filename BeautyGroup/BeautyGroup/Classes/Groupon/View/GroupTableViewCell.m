@@ -8,6 +8,14 @@
 
 #import "GroupTableViewCell.h"
 
+@interface GroupTableViewCell ()
+@property (weak, nonatomic) IBOutlet UIImageView *headImage;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *loveLabel;
+@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+
+@end
+
 @implementation GroupTableViewCell
 
 - (void)awakeFromNib {

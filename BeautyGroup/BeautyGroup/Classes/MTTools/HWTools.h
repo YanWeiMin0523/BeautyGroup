@@ -19,6 +19,4 @@
 #pragma mark ---- 根据文本内容计算返回文字高度
 + (CGFloat)getTextHeightWithText:(NSString *)text bigestSize:(CGSize)bigSize Font:(CGFloat)font;
 
-
-
 @end

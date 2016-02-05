@@ -10,7 +10,6 @@
 #import <SDWebImage/SDImageCache.h>
 #import <MessageUI/MessageUI.h>
 #import "ProgressHUD.h"
-#import "BeautyGroup.pch"
 #import "ShareView.h"
 @interface MoreViewController ()<UITableViewDataSource, UITableViewDelegate, MFMailComposeViewControllerDelegate>
 

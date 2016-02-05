@@ -12,14 +12,10 @@
 #import "ShopSpreeViewController.h"
 #import "MoneyViewController.h"
 #import "LoveViewController.h"
-#import "BeautyGroup.pch"
 #import <AFNetworking/AFHTTPSessionManager.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 @interface GroupViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property(nonatomic, strong) UIScrollView *scrollView;
-@property(nonatomic, strong) UIPageControl *pageControl;
-
 
 @end
 
@@ -28,7 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor magentaColor];
+    //边缘适配
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     
     //注册cell
     [self.tableView registerNib:[UINib nibWithNibName:@"GroupTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
@@ -43,10 +40,12 @@
     rightBarBtn.tintColor = [UIColor whiteColor];
     self.navigationItem.rightBarButtonItem = rightBarBtn;
     
+    
     //请求网络
     [self getRequest];
-    
+    //在scrollView添加多个按钮
     [self configTableViewToHeadView];
+    
  
     
 }
@@ -61,35 +60,74 @@
     
 }
 
-//网络请求
+//网络请求 猜你喜欢
 - (void)getRequest{
     AFHTTPSessionManager *httpManager = [AFHTTPSessionManager manager];
     [httpManager.responseSerializer setAcceptableContentTypes:[NSSet setWithObject:@"text/html"]];
-//    httpManager GET:<#(nonnull NSString *)#> parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
-//        YWMLog(@"%@", )
-//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//        YWMLog(@"%@", error);
-//    }
-//    
+    [httpManager GET:kYouLOve parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        NSDictionary *dic = responseObject;
+        
+        
+        
+        
+        
+        
+        
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        YWMLog(@"%@", error);
+    }];
+    
     
 }
 //自定义方法显示tableview的区头
 - (void)configTableViewToHeadView{
-    UIView *tableViewHead = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kWidth, 343)];
-    self.tableView.tableHeaderView = tableViewHead;
-    
-    
-    
-    
-    
-    
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kWidth, 200)];
+    self.tableView.tableHeaderView = imageView;
+    //存放小标题
+    NSArray *listArray1 = @[@"美食", @"电影", @"外卖", @"KTV"];
+    NSArray *listArray2 = @[@"酒店", @"周边游", @"优惠买单", @"下午茶"];
+    //添加按钮
+    for (int i = 0; i < 4; i++) {
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.frame = CGRectMake(kWidth / 4 * i + 20, 10, kWidth / 8, kWidth / 8);
+        UILabel *titleLabel = [[UILabel alloc] init];
+        titleLabel.frame = CGRectMake(kWidth / 4 * i + 20, kWidth / 8 + 20, kWidth / 8, 30);
+        
+        titleLabel.text = listArray1[i];
+        titleLabel.textAlignment = NSTextAlignmentCenter;
+        button.tag = 1+i;
+        NSString *imageStr = [NSString stringWithFormat:@"icon_homepage_%02d", i + 1];
+        [button setImage:[UIImage imageNamed:imageStr] forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(buttonTouchAction:) forControlEvents:UIControlEventTouchUpInside];
+        [imageView addSubview:button];
+        [imageView addSubview:titleLabel];
+    }
+    //第二行按钮
+    for (int i = 0; i < 4; i++) {
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.frame = CGRectMake(kWidth / 4 * i + 20, 50 + kWidth / 8, kWidth / 8, kWidth / 8);
+        UILabel *titleLabel = [[UILabel alloc] init];
+        titleLabel.frame = CGRectMake(kWidth / 4 * i + 20, kWidth / 4 + 50, kWidth / 8 + 30, 30);
+        
+        titleLabel.text = listArray2[i];
+        button.tag = 5+i;
+        NSString *imageStr = [NSString stringWithFormat:@"icon_homepage_%02d", i + 5];
+        [button setImage:[UIImage imageNamed:imageStr] forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(buttonTouchAction:) forControlEvents:UIControlEventTouchUpInside];
+        [imageView addSubview:button];
+        [imageView addSubview:titleLabel];
+    }
+
     
 }
+
 
 #pragma mark ------- UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 20;
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     GroupTableViewCell *groupCell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
@@ -114,6 +152,13 @@
 
 //单元格选中方法
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+}
+
+//button点击方法
+- (void)buttonTouchAction:(UIButton *)btn{
+    
+    
     
 }
 
