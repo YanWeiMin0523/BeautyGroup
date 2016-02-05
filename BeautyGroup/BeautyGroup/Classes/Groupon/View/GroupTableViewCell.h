@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "GroupModel.h"
 @interface GroupTableViewCell : UITableViewCell
+
+@property(nonatomic, strong) GroupModel *groupModel;
 
 @end

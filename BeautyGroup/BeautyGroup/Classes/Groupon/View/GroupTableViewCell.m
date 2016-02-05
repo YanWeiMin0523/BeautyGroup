@@ -7,7 +7,7 @@
 //
 
 #import "GroupTableViewCell.h"
-
+#import <SDWebImage/UIImageView+WebCache.h>
 @interface GroupTableViewCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *headImage;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
@@ -20,6 +20,15 @@
 
 - (void)awakeFromNib {
     // Initialization code
+}
+
+//setter方法赋值
+- (void)setGroupModel:(GroupModel *)groupModel{
+    
+    
+    
+    
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

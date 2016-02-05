@@ -12,11 +12,11 @@
 #import "ShopSpreeViewController.h"
 #import "MoneyViewController.h"
 #import "LoveViewController.h"
-#import <AFNetworking/AFHTTPSessionManager.h>
 #import <SDWebImage/UIImageView+WebCache.h>
+#import <AFNetworking/AFHTTPSessionManager.h>
+
 @interface GroupViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
 @end
 
 @implementation GroupViewController
@@ -66,7 +66,7 @@
     [httpManager.responseSerializer setAcceptableContentTypes:[NSSet setWithObject:@"text/html"]];
     [httpManager GET:kYouLOve parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         NSDictionary *dic = responseObject;
-        
+        YWMLog(@"%@", responseObject);
         
         
         
@@ -82,8 +82,8 @@
 }
 //自定义方法显示tableview的区头
 - (void)configTableViewToHeadView{
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kWidth, 200)];
-    self.tableView.tableHeaderView = imageView;
+    UIView *headView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kWidth, 150)];
+    self.tableView.tableHeaderView = headView;
     //存放小标题
     NSArray *listArray1 = @[@"美食", @"电影", @"外卖", @"KTV"];
     NSArray *listArray2 = @[@"酒店", @"周边游", @"优惠买单", @"下午茶"];
@@ -100,8 +100,9 @@
         NSString *imageStr = [NSString stringWithFormat:@"icon_homepage_%02d", i + 1];
         [button setImage:[UIImage imageNamed:imageStr] forState:UIControlStateNormal];
         [button addTarget:self action:@selector(buttonTouchAction:) forControlEvents:UIControlEventTouchUpInside];
-        [imageView addSubview:button];
-        [imageView addSubview:titleLabel];
+        [headView addSubview:button];
+        [headView addSubview:titleLabel];
+
     }
     //第二行按钮
     for (int i = 0; i < 4; i++) {
@@ -115,9 +116,11 @@
         NSString *imageStr = [NSString stringWithFormat:@"icon_homepage_%02d", i + 5];
         [button setImage:[UIImage imageNamed:imageStr] forState:UIControlStateNormal];
         [button addTarget:self action:@selector(buttonTouchAction:) forControlEvents:UIControlEventTouchUpInside];
-        [imageView addSubview:button];
-        [imageView addSubview:titleLabel];
+        [headView addSubview:button];
+        [headView addSubview:titleLabel];
+        
     }
+    
 
     
 }
@@ -125,7 +128,8 @@
 
 #pragma mark ------- UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 20;
+    
+    return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -140,15 +144,16 @@
 
 #pragma mark ---------UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 200;
+    return 140;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 3;
 }
-
+//分区头部高度
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 25;
 }
+
 
 //单元格选中方法
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -163,6 +168,7 @@
 }
 
 #pragma mark ----------- lazyLoading
+
 
 
 - (void)didReceiveMemoryWarning {

@@ -10,4 +10,19 @@
 
 @implementation GroupModel
 
+- (instancetype)initGroupDictionary:(NSDictionary *)groupDic{
+    self = [super init];
+    if (self) {
+        self.headImage = groupDic[@""];
+        self.title = groupDic[@""];
+        self.love = groupDic[@""];
+        self.price = groupDic[@""];
+    }
+    
+    
+    return self;
+}
+
+
+
 @end

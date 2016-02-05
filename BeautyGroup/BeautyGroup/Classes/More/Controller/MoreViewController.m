@@ -32,10 +32,14 @@
     self.titleArray = [[NSMutableArray alloc] initWithObjects:@"清理缓存", @"用户反馈", @"检查更新", @"客户好评", @"邀请好友使用美团", nil];
     self.imageArray = @[@"btn_order_wait", @"btn_recommend", @"ac_details_img", @"ac_details_recommed_img", @"btn_share_selected"];
     //图片
-    self.headImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kWidth, 150)];
-    self.headImage.image = [UIImage imageNamed:@"bg_login"];
-    [self.view addSubview:self.headImage];
+    [self addHeadImageToBeauty];
     
+}
+
+- (void)addHeadImageToBeauty{
+    UIImageView *headImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kWidth, 150)];
+    headImage.image = [UIImage imageNamed:@"bg_login"];
+    self.tableView.tableHeaderView = headImage;
 }
 
 //每当页面将要出现的时候计算图片缓存
@@ -175,7 +179,7 @@
 #pragma mark ----------- lazyLoading
 - (UITableView *)tableView{
     if (!_tableView) {
-        self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 150, kWidth, kHeight - 120) style:UITableViewStylePlain];
+        self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kWidth, kHeight) style:UITableViewStylePlain];
         self.tableView.delegate = self;
         self.tableView.dataSource = self;
         self.tableView.rowHeight = 60;

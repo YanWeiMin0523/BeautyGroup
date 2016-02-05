@@ -31,6 +31,7 @@
 		7A38DD951C6228F6002F6361 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A38DD941C6228F6002F6361 /* QuartzCore.framework */; };
 		7A38DD971C6228FF002F6361 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A38DD961C6228FF002F6361 /* MessageUI.framework */; };
 		7A38DD991C622C12002F6361 /* purly.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A38DD981C622C12002F6361 /* purly.png */; };
+		7A494AAC1C64D5DB0045D4EF /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A494AAB1C64D5DB0045D4EF /* LoginViewController.m */; };
 		7A87E7751C60C1CA0086EFF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A87E7741C60C1CA0086EFF1 /* main.m */; };
 		7A87E7781C60C1CA0086EFF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A87E7771C60C1CA0086EFF1 /* AppDelegate.m */; };
 		7A87E77A1C60C1CA0086EFF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A87E7791C60C1CA0086EFF1 /* Assets.xcassets */; };
@@ -106,6 +107,8 @@
 		7A38DD941C6228F6002F6361 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7A38DD961C6228FF002F6361 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		7A38DD981C622C12002F6361 /* purly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purly.png; sourceTree = "<group>"; };
+		7A494AAA1C64D5DB0045D4EF /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		7A494AAB1C64D5DB0045D4EF /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		7A87E7701C60C1C90086EFF1 /* BeautyGroup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautyGroup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A87E7741C60C1CA0086EFF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7A87E7761C60C1CA0086EFF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -428,6 +431,8 @@
 			children = (
 				7A87E7C41C60DE180086EFF1 /* MainViewController.h */,
 				7A87E7C51C60DE180086EFF1 /* MainViewController.m */,
+				7A494AAA1C64D5DB0045D4EF /* LoginViewController.h */,
+				7A494AAB1C64D5DB0045D4EF /* LoginViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -678,6 +683,7 @@
 				7A38DD691C622042002F6361 /* ShareView.m in Sources */,
 				7A87E7A91C60C97D0086EFF1 /* GroupTableViewCell.m in Sources */,
 				7A87E7A51C60C90E0086EFF1 /* LoveViewController.m in Sources */,
+				7A494AAC1C64D5DB0045D4EF /* LoginViewController.m in Sources */,
 				7A87E7C61C60DE180086EFF1 /* MainViewController.m in Sources */,
 				7A87E79C1C60C8380086EFF1 /* GroupViewController.m in Sources */,
 				7A87E7AD1C60C9960086EFF1 /* GroupModel.m in Sources */,
