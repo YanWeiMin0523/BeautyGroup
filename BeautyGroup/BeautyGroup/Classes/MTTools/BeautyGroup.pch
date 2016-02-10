@@ -27,6 +27,7 @@
 #import "PWDefine.h"
 #import "HWTools.h"
 #import "AppDelegate.h"
+#import "UIViewController+Common.h"
 
 #define MainColor [UIColor colorWithRed:0.0/255.0 green:179.0/255.0 blue:161.0/255.0 alpha:1.0]
 #endif /* BeautyGroup_pch */

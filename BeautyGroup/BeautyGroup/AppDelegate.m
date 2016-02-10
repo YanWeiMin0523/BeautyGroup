@@ -39,8 +39,8 @@
     UIImage *groupImage = [UIImage imageNamed:@"icon_tabbar_homepage_selected"];
     //选中的图片
     groupNav.tabBarItem.selectedImage = [groupImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    //设置图片位置
-    groupNav.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+    groupNav.title = @"团购";
+ 
     
     //上门服务
     UIStoryboard *homeStory = [UIStoryboard storyboardWithName:@"Home" bundle:nil];
@@ -49,8 +49,8 @@
     UIImage *homeImage = [UIImage imageNamed:@"icon_tabbar_onsite_selected"];
     //选中的图片
     homeNav.tabBarItem.selectedImage = [homeImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    //设置图片位置
-    homeNav.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+    homeNav.title = @"上门";
+    
     
     //商家
     UIStoryboard *businessStory = [UIStoryboard storyboardWithName:@"Business" bundle:nil];
@@ -59,8 +59,8 @@
     UIImage *businessImage = [UIImage imageNamed:@"icon_tabbar_merchant_selected"];
     //选中的图片
     businessNav.tabBarItem.selectedImage = [businessImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    //设置图片位置
-    businessNav.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+    businessNav.title = @"商家";
+    
     
     //我的
     UIStoryboard *mainStory = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
@@ -69,8 +69,7 @@
     UIImage *mainImage = [UIImage imageNamed:@"icon_tabbar_mine_selected"];
     //选中的图片
     mainNav.tabBarItem.selectedImage = [mainImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    //设置图片位置
-    mainNav.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+    mainNav.title = @"我的";
     
     //更多
     UIStoryboard *moreStory = [UIStoryboard storyboardWithName:@"More" bundle:nil];
@@ -79,8 +78,9 @@
     UIImage *moreImage = [UIImage imageNamed:@"icon_tabbar_misc_selected"];
     //选中的图片
     moreNav.tabBarItem.selectedImage = [moreImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    //设置图片位置
-    moreNav.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+    moreNav.title = @"更多";
+    //改变UITabBarItem字体颜色
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:MainColor, UITextAttributeTextColor, nil] forState:UIControlStateSelected];
     
     //添加被管理的视图控制器
     self.tabBarVC.viewControllers = @[groupNav, homeNav, businessNav, mainNav, moreNav];

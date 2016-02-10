@@ -13,8 +13,8 @@
 #import "MoneyViewController.h"
 #import "LoveViewController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
-#import <AFNetworking/AFHTTPSessionManager.h>
-
+//#import <AFNetworking/AFHTTPSessionManager.h>
+#import "AFHTTPSessionManager.h"
 @interface GroupViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
@@ -66,7 +66,7 @@
     [httpManager.responseSerializer setAcceptableContentTypes:[NSSet setWithObject:@"text/html"]];
     [httpManager GET:kYouLOve parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         NSDictionary *dic = responseObject;
-        YWMLog(@"%@", responseObject);
+        
         
         
         
