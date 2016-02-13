@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface BusinessViewController : UIViewController
+
+@property(nonatomic, assign) BusinessToClassfity businessToType;
 
 @end

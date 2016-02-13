@@ -9,6 +9,11 @@
 #ifndef PWDefine_h
 #define PWDefine_h
 
+typedef NS_ENUM(NSInteger, BusinessToClassfity) {
+    BusinessToClassfityTypeAll = 1,
+    BusinessToClassfityTypeCoupon
+};
+
 //猜你喜欢接口
 #define kYouLOve @"http://e.kumi.cn/app/articlelist.php?_s_=a9d09aa8b7692ebee5c8a123deacf775&_t_=1452236979&channelid=appstore&cityid=1&lat=34.61351314785497&limit=30&lng=112.4140755658942&type=1&page=1"
 //猜你喜欢详情接口
@@ -17,7 +22,7 @@
 #define kShopButton @"http://e.kumi.cn/app/articlelist.php?_s_=a9d09aa8b7692ebee5c8a123deacf775&_t_=1452236979&channelid=appstore&cityid=1&lat=34.61351314785497&limit=30&lng=112.4140755658942&type=1"
 
 
-#define kBusiness @"        "
+#define kBusiness @"http://e.kumi.cn/app/v1.3/catelist.php?_s_=78284130ab87a8396ec03073eac9c50a&_t_=1452495156&channelid=appstore&cityid=1&lat=34.61356398594803&limit=30&lng=112.4140434532402"
 
 //新浪微博分享
 #define kAppKey @"1853483581"

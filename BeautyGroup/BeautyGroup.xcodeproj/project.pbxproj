@@ -62,11 +62,11 @@
 		7A87E7D31C60E1D10086EFF1 /* Business.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A87E7D21C60E1D10086EFF1 /* Business.storyboard */; };
 		7A87E7D51C60E2300086EFF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A87E7D41C60E2300086EFF1 /* Main.storyboard */; };
 		7A87E7D71C60E2900086EFF1 /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A87E7D61C60E2900086EFF1 /* More.storyboard */; };
-		7ABB44901C6A06E100E17BDB /* BusinessTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB448E1C6A06E100E17BDB /* BusinessTableViewCell.m */; };
-		7ABB44911C6A06E100E17BDB /* BusinessTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ABB448F1C6A06E100E17BDB /* BusinessTableViewCell.xib */; };
-		7ABB44941C6A0B5C00E17BDB /* BusinessDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB44931C6A0B5C00E17BDB /* BusinessDetailViewController.m */; };
 		7ABB44971C6A0F2300E17BDB /* UIViewController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB44961C6A0F2300E17BDB /* UIViewController+Common.m */; };
-		7ABB449A1C6A0FD100E17BDB /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB44991C6A0FD100E17BDB /* DetailView.m */; };
+		7ACD5FF71C6F0A5000AF6BF8 /* VOContentLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD5FF01C6F0A5000AF6BF8 /* VOContentLayer.m */; };
+		7ACD5FF81C6F0A5000AF6BF8 /* VOIndicatorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD5FF21C6F0A5000AF6BF8 /* VOIndicatorAnimation.m */; };
+		7ACD5FF91C6F0A5000AF6BF8 /* VOSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD5FF41C6F0A5000AF6BF8 /* VOSegment.m */; };
+		7ACD5FFA1C6F0A5000AF6BF8 /* VOSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD5FF61C6F0A5000AF6BF8 /* VOSegmentedControl.m */; };
 		C5362D8A3CE0FEA29C4CEBCB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A77C7ECC10BC152D1D8CB66 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -160,15 +160,16 @@
 		7A87E7D21C60E1D10086EFF1 /* Business.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Business.storyboard; sourceTree = "<group>"; };
 		7A87E7D41C60E2300086EFF1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7A87E7D61C60E2900086EFF1 /* More.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
-		7ABB448D1C6A06E100E17BDB /* BusinessTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessTableViewCell.h; sourceTree = "<group>"; };
-		7ABB448E1C6A06E100E17BDB /* BusinessTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessTableViewCell.m; sourceTree = "<group>"; };
-		7ABB448F1C6A06E100E17BDB /* BusinessTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusinessTableViewCell.xib; sourceTree = "<group>"; };
-		7ABB44921C6A0B5C00E17BDB /* BusinessDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessDetailViewController.h; sourceTree = "<group>"; };
-		7ABB44931C6A0B5C00E17BDB /* BusinessDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessDetailViewController.m; sourceTree = "<group>"; };
 		7ABB44951C6A0F2300E17BDB /* UIViewController+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Common.h"; sourceTree = "<group>"; };
 		7ABB44961C6A0F2300E17BDB /* UIViewController+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Common.m"; sourceTree = "<group>"; };
-		7ABB44981C6A0FD100E17BDB /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
-		7ABB44991C6A0FD100E17BDB /* DetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailView.m; sourceTree = "<group>"; };
+		7ACD5FEF1C6F0A5000AF6BF8 /* VOContentLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOContentLayer.h; sourceTree = "<group>"; };
+		7ACD5FF01C6F0A5000AF6BF8 /* VOContentLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOContentLayer.m; sourceTree = "<group>"; };
+		7ACD5FF11C6F0A5000AF6BF8 /* VOIndicatorAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOIndicatorAnimation.h; sourceTree = "<group>"; };
+		7ACD5FF21C6F0A5000AF6BF8 /* VOIndicatorAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOIndicatorAnimation.m; sourceTree = "<group>"; };
+		7ACD5FF31C6F0A5000AF6BF8 /* VOSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSegment.h; sourceTree = "<group>"; };
+		7ACD5FF41C6F0A5000AF6BF8 /* VOSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSegment.m; sourceTree = "<group>"; };
+		7ACD5FF51C6F0A5000AF6BF8 /* VOSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSegmentedControl.h; sourceTree = "<group>"; };
+		7ACD5FF61C6F0A5000AF6BF8 /* VOSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSegmentedControl.m; sourceTree = "<group>"; };
 		82E12D059F342A4B53AFDB89 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D93720309F52ED8FBFB9382F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -369,8 +370,6 @@
 			children = (
 				7A87E7CA1C60DE550086EFF1 /* BusinessViewController.h */,
 				7A87E7CB1C60DE550086EFF1 /* BusinessViewController.m */,
-				7ABB44921C6A0B5C00E17BDB /* BusinessDetailViewController.h */,
-				7ABB44931C6A0B5C00E17BDB /* BusinessDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -386,11 +385,6 @@
 			isa = PBXGroup;
 			children = (
 				7A87E7D21C60E1D10086EFF1 /* Business.storyboard */,
-				7ABB44981C6A0FD100E17BDB /* DetailView.h */,
-				7ABB44991C6A0FD100E17BDB /* DetailView.m */,
-				7ABB448D1C6A06E100E17BDB /* BusinessTableViewCell.h */,
-				7ABB448E1C6A06E100E17BDB /* BusinessTableViewCell.m */,
-				7ABB448F1C6A06E100E17BDB /* BusinessTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -527,10 +521,26 @@
 				7ABB44961C6A0F2300E17BDB /* UIViewController+Common.m */,
 				7A1464E21C6DBEF600802C80 /* UIView+UIViewExtension.m */,
 				7A1464E31C6DBEF600802C80 /* UIView+UIViewExtension.h */,
+				7ACD5FEE1C6F0A5000AF6BF8 /* VOSegmentedControl */,
 				7A38DD581C61F99B002F6361 /* PullingRefreshTableView */,
 			);
 			name = MTTools;
 			path = Classes/MTTools;
+			sourceTree = "<group>";
+		};
+		7ACD5FEE1C6F0A5000AF6BF8 /* VOSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				7ACD5FEF1C6F0A5000AF6BF8 /* VOContentLayer.h */,
+				7ACD5FF01C6F0A5000AF6BF8 /* VOContentLayer.m */,
+				7ACD5FF11C6F0A5000AF6BF8 /* VOIndicatorAnimation.h */,
+				7ACD5FF21C6F0A5000AF6BF8 /* VOIndicatorAnimation.m */,
+				7ACD5FF31C6F0A5000AF6BF8 /* VOSegment.h */,
+				7ACD5FF41C6F0A5000AF6BF8 /* VOSegment.m */,
+				7ACD5FF51C6F0A5000AF6BF8 /* VOSegmentedControl.h */,
+				7ACD5FF61C6F0A5000AF6BF8 /* VOSegmentedControl.m */,
+			);
+			path = VOSegmentedControl;
 			sourceTree = "<group>";
 		};
 		A9A4729F5A90ED383951F26D /* Frameworks */ = {
@@ -641,7 +651,6 @@
 				7A01F5CC1C6E043B00F7FB54 /* GroupTableViewCell.xib in Resources */,
 				7A38DD5E1C61F99B002F6361 /* blueArrow.png in Resources */,
 				7A87E7D11C60DFAC0086EFF1 /* Home.storyboard in Resources */,
-				7ABB44911C6A06E100E17BDB /* BusinessTableViewCell.xib in Resources */,
 				7A38DD991C622C12002F6361 /* purly.png in Resources */,
 				7A87E77A1C60C1CA0086EFF1 /* Assets.xcassets in Resources */,
 				7A87E7D31C60E1D10086EFF1 /* Business.storyboard in Resources */,
@@ -708,16 +717,18 @@
 				7A1464E41C6DBEF600802C80 /* UIView+UIViewExtension.m in Sources */,
 				7A87E79F1C60C8DA0086EFF1 /* ShopSpreeViewController.m in Sources */,
 				7A87E7CC1C60DE550086EFF1 /* BusinessViewController.m in Sources */,
+				7ACD5FFA1C6F0A5000AF6BF8 /* VOSegmentedControl.m in Sources */,
 				7A01F5CB1C6E043B00F7FB54 /* GroupTableViewCell.m in Sources */,
 				7A38DD601C61F99B002F6361 /* PullingRefreshTableView.m in Sources */,
 				7A38DD691C622042002F6361 /* ShareView.m in Sources */,
-				7ABB449A1C6A0FD100E17BDB /* DetailView.m in Sources */,
+				7ACD5FF71C6F0A5000AF6BF8 /* VOContentLayer.m in Sources */,
 				7A87E7A51C60C90E0086EFF1 /* LoveViewController.m in Sources */,
-				7ABB44901C6A06E100E17BDB /* BusinessTableViewCell.m in Sources */,
 				7A494AAC1C64D5DB0045D4EF /* LoginViewController.m in Sources */,
+				7ACD5FF81C6F0A5000AF6BF8 /* VOIndicatorAnimation.m in Sources */,
 				7A87E7C61C60DE180086EFF1 /* MainViewController.m in Sources */,
 				7A87E79C1C60C8380086EFF1 /* GroupViewController.m in Sources */,
 				7A87E7AD1C60C9960086EFF1 /* GroupModel.m in Sources */,
+				7ACD5FF91C6F0A5000AF6BF8 /* VOSegment.m in Sources */,
 				7A87E7781C60C1CA0086EFF1 /* AppDelegate.m in Sources */,
 				7ABB44971C6A0F2300E17BDB /* UIViewController+Common.m in Sources */,
 				7A38DD561C61F944002F6361 /* HWTools.m in Sources */,
@@ -726,7 +737,6 @@
 				7A1464E11C6DAFBF00802C80 /* GroupView.m in Sources */,
 				7A87E7C91C60DE3A0086EFF1 /* MoreViewController.m in Sources */,
 				7A87E7CF1C60DE630086EFF1 /* HomeViewController.m in Sources */,
-				7ABB44941C6A0B5C00E17BDB /* BusinessDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
