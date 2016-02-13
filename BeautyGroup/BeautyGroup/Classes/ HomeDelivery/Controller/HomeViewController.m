@@ -27,16 +27,18 @@
     for (int i = 0; i < 4; i++) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.frame = CGRectMake(5, kWidth / 4 * i + 80, kWidth / 2 - 5, kHeight / 8);
-        button.backgroundColor = [UIColor redColor];
         [button addTarget:self action:@selector(addButtonToImage:) forControlEvents:UIControlEventTouchUpInside];
+        NSString *imageStr = [NSString stringWithFormat:@"home_%02d", i + 1];
+        [button setImage:[UIImage imageNamed:imageStr] forState:UIControlStateNormal];
         button.tag = 1 + i;
         [self.view addSubview:button];
     }
     for (int i = 0; i < 4; i++) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.frame = CGRectMake(5 + kWidth / 2, kWidth / 4 * i + 80, kWidth / 2 - 10, kHeight / 8);
-        button.backgroundColor = [UIColor redColor];
         [button addTarget:self action:@selector(BusinessButtonToImage:) forControlEvents:UIControlEventTouchUpInside];
+        NSString *imageStr = [NSString stringWithFormat:@"business_%02d", i + 1];
+        [button setImage:[UIImage imageNamed:imageStr] forState:UIControlStateNormal];
         button.tag = 10 + i;
         [self.view addSubview:button];
     }

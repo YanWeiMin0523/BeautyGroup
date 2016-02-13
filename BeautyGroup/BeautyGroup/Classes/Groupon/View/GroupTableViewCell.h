@@ -2,7 +2,7 @@
 //  GroupTableViewCell.h
 //  BeautyGroup
 //
-//  Created by scjy on 16/2/2.
+//  Created by scjy on 16/2/12.
 //  Copyright © 2016年 YanWeiMin. All rights reserved.
 //
 

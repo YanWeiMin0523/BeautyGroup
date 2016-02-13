@@ -2,7 +2,7 @@
 //  GroupTableViewCell.m
 //  BeautyGroup
 //
-//  Created by scjy on 16/2/2.
+//  Created by scjy on 16/2/12.
 //  Copyright © 2016年 YanWeiMin. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 @interface GroupTableViewCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *headImage;
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *titleLable;
 @property (weak, nonatomic) IBOutlet UILabel *loveLabel;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 
@@ -22,11 +22,14 @@
     // Initialization code
 }
 
-//setter方法赋值
+//setter
 - (void)setGroupModel:(GroupModel *)groupModel{
-    
-    
-    
+    [self.headImage sd_setImageWithURL:[NSURL URLWithString:groupModel.headImage] placeholderImage:nil];
+    self.headImage.clipsToBounds = YES;
+    self.headImage.layer.cornerRadius = 20.0;
+    self.titleLable.text = groupModel.title;
+    self.loveLabel.text = [NSString stringWithFormat:@"%@", groupModel.love];
+    self.priceLabel.text = groupModel.price;
     
     
 }

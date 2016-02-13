@@ -13,10 +13,11 @@
 - (instancetype)initGroupDictionary:(NSDictionary *)groupDic{
     self = [super init];
     if (self) {
-        self.headImage = groupDic[@""];
-        self.title = groupDic[@""];
-        self.love = groupDic[@""];
-        self.price = groupDic[@""];
+        self.headImage = groupDic[@"image"];
+        self.title = groupDic[@"title"];
+        self.love = groupDic[@"address"];
+        self.price = groupDic[@"price"];
+        self.youLoveID = groupDic[@"id"];
     }
     
     

@@ -10,4 +10,6 @@
 
 @interface LoveViewController : UIViewController
 
+@property(nonatomic, copy) NSString *loveDetailID;
+
 @end

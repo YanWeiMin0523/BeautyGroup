@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A01F5CB1C6E043B00F7FB54 /* GroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A01F5C91C6E043B00F7FB54 /* GroupTableViewCell.m */; };
+		7A01F5CC1C6E043B00F7FB54 /* GroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A01F5CA1C6E043B00F7FB54 /* GroupTableViewCell.xib */; };
+		7A1464E11C6DAFBF00802C80 /* GroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1464E01C6DAFBF00802C80 /* GroupView.m */; };
+		7A1464E41C6DBEF600802C80 /* UIView+UIViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1464E21C6DBEF600802C80 /* UIView+UIViewExtension.m */; };
 		7A38DD561C61F944002F6361 /* HWTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A38DD551C61F944002F6361 /* HWTools.m */; };
 		7A38DD5E1C61F99B002F6361 /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A38DD591C61F99B002F6361 /* blueArrow.png */; };
 		7A38DD5F1C61F99B002F6361 /* blueArrowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A38DD5A1C61F99B002F6361 /* blueArrowDown.png */; };
@@ -38,10 +42,7 @@
 		7A87E77D1C60C1CA0086EFF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A87E77B1C60C1CA0086EFF1 /* LaunchScreen.storyboard */; };
 		7A87E79C1C60C8380086EFF1 /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A87E79B1C60C8380086EFF1 /* GroupViewController.m */; };
 		7A87E79F1C60C8DA0086EFF1 /* ShopSpreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A87E79E1C60C8DA0086EFF1 /* ShopSpreeViewController.m */; };
-		7A87E7A21C60C8F10086EFF1 /* MoneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A87E7A11C60C8F10086EFF1 /* MoneyViewController.m */; };
 		7A87E7A51C60C90E0086EFF1 /* LoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A87E7A41C60C90E0086EFF1 /* LoveViewController.m */; };
-		7A87E7A91C60C97D0086EFF1 /* GroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A87E7A71C60C97D0086EFF1 /* GroupTableViewCell.m */; };
-		7A87E7AA1C60C97D0086EFF1 /* GroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A87E7A81C60C97D0086EFF1 /* GroupTableViewCell.xib */; };
 		7A87E7AD1C60C9960086EFF1 /* GroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A87E7AC1C60C9960086EFF1 /* GroupModel.m */; };
 		7A87E7AF1C60D88C0086EFF1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A87E7AE1C60D88C0086EFF1 /* libz.tbd */; };
 		7A87E7B11C60D8AE0086EFF1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A87E7B01C60D8AE0086EFF1 /* libsqlite3.tbd */; };
@@ -71,6 +72,13 @@
 
 /* Begin PBXFileReference section */
 		3A77C7ECC10BC152D1D8CB66 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A01F5C81C6E043B00F7FB54 /* GroupTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupTableViewCell.h; sourceTree = "<group>"; };
+		7A01F5C91C6E043B00F7FB54 /* GroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupTableViewCell.m; sourceTree = "<group>"; };
+		7A01F5CA1C6E043B00F7FB54 /* GroupTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupTableViewCell.xib; sourceTree = "<group>"; };
+		7A1464DF1C6DAFBF00802C80 /* GroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupView.h; sourceTree = "<group>"; };
+		7A1464E01C6DAFBF00802C80 /* GroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupView.m; sourceTree = "<group>"; };
+		7A1464E21C6DBEF600802C80 /* UIView+UIViewExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIViewExtension.m"; sourceTree = "<group>"; };
+		7A1464E31C6DBEF600802C80 /* UIView+UIViewExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UIViewExtension.h"; sourceTree = "<group>"; };
 		7A38DD541C61E270002F6361 /* PWDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWDefine.h; sourceTree = "<group>"; };
 		7A38DD551C61F944002F6361 /* HWTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTools.m; sourceTree = "<group>"; };
 		7A38DD571C61F94C002F6361 /* HWTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTools.h; sourceTree = "<group>"; };
@@ -125,13 +133,8 @@
 		7A87E79B1C60C8380086EFF1 /* GroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupViewController.m; sourceTree = "<group>"; };
 		7A87E79D1C60C8DA0086EFF1 /* ShopSpreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopSpreeViewController.h; sourceTree = "<group>"; };
 		7A87E79E1C60C8DA0086EFF1 /* ShopSpreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopSpreeViewController.m; sourceTree = "<group>"; };
-		7A87E7A01C60C8F10086EFF1 /* MoneyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneyViewController.h; sourceTree = "<group>"; };
-		7A87E7A11C60C8F10086EFF1 /* MoneyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyViewController.m; sourceTree = "<group>"; };
 		7A87E7A31C60C90E0086EFF1 /* LoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoveViewController.h; sourceTree = "<group>"; };
 		7A87E7A41C60C90E0086EFF1 /* LoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoveViewController.m; sourceTree = "<group>"; };
-		7A87E7A61C60C97D0086EFF1 /* GroupTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupTableViewCell.h; sourceTree = "<group>"; };
-		7A87E7A71C60C97D0086EFF1 /* GroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupTableViewCell.m; sourceTree = "<group>"; };
-		7A87E7A81C60C97D0086EFF1 /* GroupTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupTableViewCell.xib; sourceTree = "<group>"; };
 		7A87E7AB1C60C9960086EFF1 /* GroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupModel.h; sourceTree = "<group>"; };
 		7A87E7AC1C60C9960086EFF1 /* GroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupModel.m; sourceTree = "<group>"; };
 		7A87E7AE1C60D88C0086EFF1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -409,8 +412,6 @@
 				7A87E79B1C60C8380086EFF1 /* GroupViewController.m */,
 				7A87E79D1C60C8DA0086EFF1 /* ShopSpreeViewController.h */,
 				7A87E79E1C60C8DA0086EFF1 /* ShopSpreeViewController.m */,
-				7A87E7A01C60C8F10086EFF1 /* MoneyViewController.h */,
-				7A87E7A11C60C8F10086EFF1 /* MoneyViewController.m */,
 				7A87E7A31C60C90E0086EFF1 /* LoveViewController.h */,
 				7A87E7A41C60C90E0086EFF1 /* LoveViewController.m */,
 			);
@@ -429,10 +430,12 @@
 		7A87E7901C60C7D90086EFF1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7A87E7A61C60C97D0086EFF1 /* GroupTableViewCell.h */,
-				7A87E7A71C60C97D0086EFF1 /* GroupTableViewCell.m */,
-				7A87E7A81C60C97D0086EFF1 /* GroupTableViewCell.xib */,
 				7A87E7C21C60DBD60086EFF1 /* Group.storyboard */,
+				7A01F5C81C6E043B00F7FB54 /* GroupTableViewCell.h */,
+				7A01F5C91C6E043B00F7FB54 /* GroupTableViewCell.m */,
+				7A01F5CA1C6E043B00F7FB54 /* GroupTableViewCell.xib */,
+				7A1464DF1C6DAFBF00802C80 /* GroupView.h */,
+				7A1464E01C6DAFBF00802C80 /* GroupView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -522,6 +525,8 @@
 				7A38DD551C61F944002F6361 /* HWTools.m */,
 				7ABB44951C6A0F2300E17BDB /* UIViewController+Common.h */,
 				7ABB44961C6A0F2300E17BDB /* UIViewController+Common.m */,
+				7A1464E21C6DBEF600802C80 /* UIView+UIViewExtension.m */,
+				7A1464E31C6DBEF600802C80 /* UIView+UIViewExtension.h */,
 				7A38DD581C61F99B002F6361 /* PullingRefreshTableView */,
 			);
 			name = MTTools;
@@ -633,12 +638,12 @@
 				7A38DD5F1C61F99B002F6361 /* blueArrowDown.png in Resources */,
 				7A87E7D71C60E2900086EFF1 /* More.storyboard in Resources */,
 				7A87E7C31C60DBD60086EFF1 /* Group.storyboard in Resources */,
+				7A01F5CC1C6E043B00F7FB54 /* GroupTableViewCell.xib in Resources */,
 				7A38DD5E1C61F99B002F6361 /* blueArrow.png in Resources */,
 				7A87E7D11C60DFAC0086EFF1 /* Home.storyboard in Resources */,
 				7ABB44911C6A06E100E17BDB /* BusinessTableViewCell.xib in Resources */,
 				7A38DD991C622C12002F6361 /* purly.png in Resources */,
 				7A87E77A1C60C1CA0086EFF1 /* Assets.xcassets in Resources */,
-				7A87E7AA1C60C97D0086EFF1 /* GroupTableViewCell.xib in Resources */,
 				7A87E7D31C60E1D10086EFF1 /* Business.storyboard in Resources */,
 				7A87E77D1C60C1CA0086EFF1 /* LaunchScreen.storyboard in Resources */,
 				7A38DD781C6222E2002F6361 /* WeiboSDK.bundle in Resources */,
@@ -700,13 +705,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A1464E41C6DBEF600802C80 /* UIView+UIViewExtension.m in Sources */,
 				7A87E79F1C60C8DA0086EFF1 /* ShopSpreeViewController.m in Sources */,
 				7A87E7CC1C60DE550086EFF1 /* BusinessViewController.m in Sources */,
-				7A87E7A21C60C8F10086EFF1 /* MoneyViewController.m in Sources */,
+				7A01F5CB1C6E043B00F7FB54 /* GroupTableViewCell.m in Sources */,
 				7A38DD601C61F99B002F6361 /* PullingRefreshTableView.m in Sources */,
 				7A38DD691C622042002F6361 /* ShareView.m in Sources */,
 				7ABB449A1C6A0FD100E17BDB /* DetailView.m in Sources */,
-				7A87E7A91C60C97D0086EFF1 /* GroupTableViewCell.m in Sources */,
 				7A87E7A51C60C90E0086EFF1 /* LoveViewController.m in Sources */,
 				7ABB44901C6A06E100E17BDB /* BusinessTableViewCell.m in Sources */,
 				7A494AAC1C64D5DB0045D4EF /* LoginViewController.m in Sources */,
@@ -718,6 +723,7 @@
 				7A38DD561C61F944002F6361 /* HWTools.m in Sources */,
 				7A87E7751C60C1CA0086EFF1 /* main.m in Sources */,
 				7A38DD661C61FEA9002F6361 /* ProgressHUD.m in Sources */,
+				7A1464E11C6DAFBF00802C80 /* GroupView.m in Sources */,
 				7A87E7C91C60DE3A0086EFF1 /* MoreViewController.m in Sources */,
 				7A87E7CF1C60DE630086EFF1 /* HomeViewController.m in Sources */,
 				7ABB44941C6A0B5C00E17BDB /* BusinessDetailViewController.m in Sources */,
