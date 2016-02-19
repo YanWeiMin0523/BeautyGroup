@@ -43,7 +43,7 @@
     
     
     //请求网络
-//    [self getRequest];
+    [self getRequest];
     //在scrollView添加多个按钮
     [self configTableViewToHeadView];
     

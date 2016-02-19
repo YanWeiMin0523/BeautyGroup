@@ -36,6 +36,7 @@
 		7A38DD971C6228FF002F6361 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A38DD961C6228FF002F6361 /* MessageUI.framework */; };
 		7A38DD991C622C12002F6361 /* purly.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A38DD981C622C12002F6361 /* purly.png */; };
 		7A494AAC1C64D5DB0045D4EF /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A494AAB1C64D5DB0045D4EF /* LoginViewController.m */; };
+		7A8666091C734CAC0029A747 /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8666081C734CAC0029A747 /* RecommendViewController.m */; };
 		7A87E7751C60C1CA0086EFF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A87E7741C60C1CA0086EFF1 /* main.m */; };
 		7A87E7781C60C1CA0086EFF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A87E7771C60C1CA0086EFF1 /* AppDelegate.m */; };
 		7A87E77A1C60C1CA0086EFF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A87E7791C60C1CA0086EFF1 /* Assets.xcassets */; };
@@ -122,6 +123,8 @@
 		7A38DD981C622C12002F6361 /* purly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purly.png; sourceTree = "<group>"; };
 		7A494AAA1C64D5DB0045D4EF /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		7A494AAB1C64D5DB0045D4EF /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		7A8666071C734CAC0029A747 /* RecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
+		7A8666081C734CAC0029A747 /* RecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
 		7A87E7701C60C1C90086EFF1 /* BeautyGroup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautyGroup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A87E7741C60C1CA0086EFF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7A87E7761C60C1CA0086EFF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -449,6 +452,8 @@
 			children = (
 				7A87E7C41C60DE180086EFF1 /* MainViewController.h */,
 				7A87E7C51C60DE180086EFF1 /* MainViewController.m */,
+				7A8666071C734CAC0029A747 /* RecommendViewController.h */,
+				7A8666081C734CAC0029A747 /* RecommendViewController.m */,
 				7A494AAA1C64D5DB0045D4EF /* LoginViewController.h */,
 				7A494AAB1C64D5DB0045D4EF /* LoginViewController.m */,
 			);
@@ -719,6 +724,7 @@
 				7A87E7CC1C60DE550086EFF1 /* BusinessViewController.m in Sources */,
 				7ACD5FFA1C6F0A5000AF6BF8 /* VOSegmentedControl.m in Sources */,
 				7A01F5CB1C6E043B00F7FB54 /* GroupTableViewCell.m in Sources */,
+				7A8666091C734CAC0029A747 /* RecommendViewController.m in Sources */,
 				7A38DD601C61F99B002F6361 /* PullingRefreshTableView.m in Sources */,
 				7A38DD691C622042002F6361 /* ShareView.m in Sources */,
 				7ACD5FF71C6F0A5000AF6BF8 /* VOContentLayer.m in Sources */,

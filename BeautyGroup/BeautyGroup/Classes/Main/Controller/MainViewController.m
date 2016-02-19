@@ -8,11 +8,14 @@
 
 #import "MainViewController.h"
 #import "LoginViewController.h"
+#import "RecommendViewController.h"
 @interface MainViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property(nonatomic, strong) UITableView *tableView;
 @property(nonatomic, strong) UIButton *headButton;
 @property(nonatomic, strong) UILabel *nameLabel;
+@property(nonatomic, strong) NSArray *imageArray;
+@property(nonatomic, strong) NSArray *titleArray;
 
 @end
 
@@ -24,18 +27,26 @@
     [self.view addSubview:self.tableView];
     
     [self addHeadButtonToLogin];
+    
+    //数组
+    self.titleArray = [NSArray arrayWithObjects:@"我的订单", @"美团钱包", @"抵用卷", @"每日推荐", nil];
+    self.imageArray = [NSArray arrayWithObjects:@"icon_order", @"icon_ele", @"icon_ac", @"list_like_heart", nil];
 }
 
 
 #pragma mark ----------- UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 3) {
+        RecommendViewController *recommendVC = [[RecommendViewController alloc] init];
+        [self.navigationController pushViewController:recommendVC animated:YES];
+        
+    }else{
+        UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        LoginViewController *loginVC = [storyBoard instantiateViewControllerWithIdentifier:@"LoginVC"];
+        [self.navigationController pushViewController:loginVC animated:YES];
+    }
     
     
-    
-}
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 3;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
@@ -50,15 +61,14 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIndex];
         
     }
-    
+    cell.imageView.image = [UIImage imageNamed:self.imageArray[indexPath.row]];
+    cell.textLabel.text = self.titleArray[indexPath.row];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    
-    
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 6;
+    return self.titleArray.count;
 }
 
 //添加tableView头部
@@ -69,15 +79,19 @@
     [headView addSubview:self.headButton];
     [headView addSubview:self.nameLabel];
     
-    
-    
 }
 
 //点击上部圆形button的方法，进行登陆/注册
 - (void)headAction:(UIButton *)btn{
-    LoginViewController *loginVC = [[LoginViewController alloc] init];
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    LoginViewController *loginVC = [storyBoard instantiateViewControllerWithIdentifier:@"LoginVC"];
     [self.navigationController pushViewController:loginVC animated:YES];
     
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [self viewDidAppear:YES];
+    self.tabBarController.tabBar.hidden = NO;
 }
 
 #pragma mark -------- lazyLoading

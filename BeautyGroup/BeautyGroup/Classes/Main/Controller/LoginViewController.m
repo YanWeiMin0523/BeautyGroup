@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self showBackButton];
+    self.tabBarController.tabBar.hidden = YES;
+    self.title = @"登陆";
+    
 }
 
 - (void)didReceiveMemoryWarning {
