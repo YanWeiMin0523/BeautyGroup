@@ -13,6 +13,7 @@
 #import "LoveViewController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "AFHTTPSessionManager.h"
+#import "CityViewController.h"
 @interface GroupViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -84,7 +85,9 @@
 #pragma mark ------------ ConstomMethod
 //选择城市
 - (void)selectCityAction:(UIBarButtonItem *)barButton{
-    
+    CityViewController *cityVC = [[CityViewController alloc] init];
+    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:cityVC];
+    [self.navigationController presentViewController:navVC animated:YES completion:nil];
     
 }
 - (void)searchAction:(UIBarButtonItem *)bar{

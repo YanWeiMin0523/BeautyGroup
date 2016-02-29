@@ -25,9 +25,9 @@ typedef NS_ENUM(NSInteger, BusinessToClassfity) {
 #define kBusiness @"http://e.kumi.cn/app/v1.3/catelist.php?_s_=78284130ab87a8396ec03073eac9c50a&_t_=1452495156&channelid=appstore&cityid=1&lat=34.61356398594803&limit=30&lng=112.4140434532402"
 
 //新浪微博分享
-#define kAppKey @"1853483581"
+#define kAppKey @"290776830"
 #define kRedirectURI @"https://api.weibo.com/oauth2/default.html"
-#define kAppSecret @"fb5db329af39e183e4e14d11a7c82e03"
+#define kAppSecret @"571ee650b429fe48095f404b10ef969f"
 
 //微信分享
 #define kWeixinKey @"wx63bad32379646e98"

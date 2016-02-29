@@ -68,6 +68,7 @@
 		7ACD5FF81C6F0A5000AF6BF8 /* VOIndicatorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD5FF21C6F0A5000AF6BF8 /* VOIndicatorAnimation.m */; };
 		7ACD5FF91C6F0A5000AF6BF8 /* VOSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD5FF41C6F0A5000AF6BF8 /* VOSegment.m */; };
 		7ACD5FFA1C6F0A5000AF6BF8 /* VOSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD5FF61C6F0A5000AF6BF8 /* VOSegmentedControl.m */; };
+		7AE8627C1C846905005860AD /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE8627B1C846905005860AD /* CityViewController.m */; };
 		C5362D8A3CE0FEA29C4CEBCB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A77C7ECC10BC152D1D8CB66 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -173,6 +174,8 @@
 		7ACD5FF41C6F0A5000AF6BF8 /* VOSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSegment.m; sourceTree = "<group>"; };
 		7ACD5FF51C6F0A5000AF6BF8 /* VOSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSegmentedControl.h; sourceTree = "<group>"; };
 		7ACD5FF61C6F0A5000AF6BF8 /* VOSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSegmentedControl.m; sourceTree = "<group>"; };
+		7AE8627A1C846905005860AD /* CityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityViewController.h; sourceTree = "<group>"; };
+		7AE8627B1C846905005860AD /* CityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityViewController.m; sourceTree = "<group>"; };
 		82E12D059F342A4B53AFDB89 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D93720309F52ED8FBFB9382F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,6 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A87E7BF1C60D91B0086EFF1 /* CoreLocation.framework in Frameworks */,
 				7A38DD971C6228FF002F6361 /* MessageUI.framework in Frameworks */,
 				7A38DD951C6228F6002F6361 /* QuartzCore.framework in Frameworks */,
 				7A38DD931C6228EA002F6361 /* ImageIO.framework in Frameworks */,
@@ -198,7 +202,6 @@
 				7A38DD831C622836002F6361 /* libz.1.2.5.tbd in Frameworks */,
 				7A38DD811C622827002F6361 /* libicucore.tbd in Frameworks */,
 				7A38DD7F1C62280E002F6361 /* MediaPlayer.framework in Frameworks */,
-				7A87E7BF1C60D91B0086EFF1 /* CoreLocation.framework in Frameworks */,
 				7A38DD771C6222E2002F6361 /* libWeiboSDK.a in Frameworks */,
 				7A38DD7D1C6222E6002F6361 /* libWeChatSDK.a in Frameworks */,
 				7A87E7BB1C60D9030086EFF1 /* libiconv.tbd in Frameworks */,
@@ -411,6 +414,8 @@
 				7A87E79E1C60C8DA0086EFF1 /* ShopSpreeViewController.m */,
 				7A87E7A31C60C90E0086EFF1 /* LoveViewController.h */,
 				7A87E7A41C60C90E0086EFF1 /* LoveViewController.m */,
+				7AE8627A1C846905005860AD /* CityViewController.h */,
+				7AE8627B1C846905005860AD /* CityViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -741,6 +746,7 @@
 				7A87E7751C60C1CA0086EFF1 /* main.m in Sources */,
 				7A38DD661C61FEA9002F6361 /* ProgressHUD.m in Sources */,
 				7A1464E11C6DAFBF00802C80 /* GroupView.m in Sources */,
+				7AE8627C1C846905005860AD /* CityViewController.m in Sources */,
 				7A87E7C91C60DE3A0086EFF1 /* MoreViewController.m in Sources */,
 				7A87E7CF1C60DE630086EFF1 /* HomeViewController.m in Sources */,
 			);
